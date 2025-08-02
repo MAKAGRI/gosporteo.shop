@@ -1,182 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAT Cargo VAD LLC</title>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            color: #333;
-        }
-        nav {
-            background: #000;
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 30px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        nav .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 16px;
-        }
-        .hero {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            padding: 80px 20px;
-            background: #111;
-            color: #fff;
-            min-height: 100vh;
-            animation: fadeIn 2s ease-in-out;
-        }
-        .hero-text {
-            max-width: 500px;
-            padding: 20px;
-            animation: slideInLeft 1.5s ease;
-        }
-        .hero-text h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-        .hero-text p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-        .hero-img img {
-            max-width: 400px;
-            width: 100%;
-            border-radius: 10px;
-            animation: slideInRight 1.5s ease;
-        }
-        .section {
-            padding: 60px 20px;
-            text-align: center;
-            max-width: 900px;
-            margin: 0 auto;
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 1s ease;
-        }
-        .section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .section h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-        .section p {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #555;
-        }
-        .contact {
-            background: #e9e9e9;
-            padding: 60px 20px;
-        }
-        footer {
-            background: #000;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes slideInLeft {
-            from { transform: translateX(-50px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-        @keyframes slideInRight {
-            from { transform: translateX(50px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHAG DAYTONA RESYNDICATION, LLC</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#f9f9f9;
+      color:#333;
+      line-height:1.6;
+    }
+    header{
+      background:url('https://www.solostyle.it/wp-content/uploads/2012/05/COS.jpg') center/cover no-repeat;
+      color:#fff;
+      text-align:center;
+      padding:100px 20px;
+      position:relative;
+    }
+    header::after{
+      content:'';
+      position:absolute;
+      top:0;left:0;
+      width:100%;height:100%;
+      background:rgba(0,0,0,0.5);
+    }
+    header h1,header p{
+      position:relative;
+      z-index:2;
+    }
+    header h1{
+      font-size:3rem;
+      margin-bottom:15px;
+      letter-spacing:2px;
+    }
+    header p{font-size:1.2rem;opacity:0.9;}
+    section{
+      max-width:1200px;
+      margin:50px auto;
+      padding:20px;
+    }
+    .flex{display:flex;gap:30px;flex-wrap:wrap;align-items:center;}
+    .text,.image{flex:1 1 45%;}
+    .image img{
+      width:100%;
+      height:300px;
+      object-fit:cover;
+      border-radius:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    }
+    h2{
+      font-size:2rem;
+      color:#1d3557;
+      margin-bottom:15px;
+    }
+    .cta{text-align:center;margin:40px 0;}
+    .cta a{
+      background:#1d3557;
+      color:#fff;
+      text-decoration:none;
+      padding:15px 35px;
+      border-radius:30px;
+      font-size:1rem;
+      transition:all 0.3s ease;
+    }
+    .cta a:hover{background:#457b9d;}
+    footer{
+      background:#1d3557;
+      color:#fff;
+      text-align:center;
+      padding:30px 20px;
+    }
+    footer p{margin:5px 0;}
+    @media(max-width:768px){
+      header h1{font-size:2.2rem;}
+      .flex .text,.flex .image{flex:1 1 100%;}
+    }
+  </style>
 </head>
 <body>
+  <!-- Hero -->
+  <header>
+    <h1>SHAG DAYTONA RESYNDICATION, LLC</h1>
+    <p>Your Boutique for Elegant and Modern Fashion</p>
+  </header>
 
-    <nav>
-        <div class="logo">PAT Cargo VAD LLC</div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <div class="hero" id="home">
-        <div class="hero-text">
-            <h1>PAT Cargo VAD LLC</h1>
-            <p>Your trusted partner in transportation and warehousing. We provide reliable cargo services and storage solutions to meet your business needs with efficiency and care.</p>
-        </div>
-        <div class="hero-img">
-            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&auto=format&fit=crop&w=934&q=80" alt="Cargo Services">
-        </div>
+  <!-- Section 1: About -->
+  <section>
+    <div class="flex">
+      <div class="text">
+        <h2>Who We Are</h2>
+        <p>We are a fashion-forward boutique based in Delray Beach, FL, bringing you curated collections that reflect elegance and contemporary style.</p>
+      </div>
+      <div class="image">
+        <img src="https://avatars.mds.yandex.net/i?id=14da47038db0d69940b345b34eac89361b6634f1-8154230-images-thumbs&n=13" alt="Who We Are">
+      </div>
     </div>
+  </section>
 
-    <div class="section" id="about">
-        <h2>About Us</h2>
-        <p>PAT Cargo VAD LLC is a Domestic LLC based in Arizona, offering specialized services in transportation and warehousing. With a focus on reliability and customer satisfaction, we have been serving businesses since 2021.</p>
-        <p><strong>Registered Address:</strong><br>
-        2902 W Sweetwater Ave, Apt 2190, Phoenix, AZ 85029, United States</p>
+  <!-- Section 2: Vision -->
+  <section>
+    <div class="flex">
+      <div class="image">
+        <img src="https://avatars.mds.yandex.net/i?id=740428c76326141801b3a6ddc48fcab29bb4096f-16509647-images-thumbs&n=13" alt="Vision">
+      </div>
+      <div class="text">
+        <h2>Our Vision</h2>
+        <p>Our goal is to create a boutique experience that inspires confidence and style through a carefully selected range of clothing.</p>
+      </div>
     </div>
+  </section>
 
-    <div class="section contact" id="contact">
-        <h2>Contact Us</h2>
-        <p><strong>Email:</strong> <a href="mailto:contact@patcargovadllc.click">contact@patcargovadllc.click</a></p>
-        <p><strong>Agent Address:</strong><br>
-        2902 W Sweetwater Ave, Apt 2190, Phoenix, AZ 85029, United States</p>
+  <!-- Section 3: Collections -->
+  <section>
+    <div class="flex">
+      <div class="text">
+        <h2>Our Collections</h2>
+        <p>Discover exclusive collections for men and women, designed to suit every occasion with a unique touch.</p>
+      </div>
+      <div class="image">
+        <img src="https://i.pinimg.com/originals/6d/d8/61/6dd8616c74913f3dbb301e9fb261bf6c.jpg" alt="Collections">
+      </div>
     </div>
+  </section>
 
-    <footer>
-        &copy; 2025 PAT Cargo VAD LLC. All rights reserved.
-    </footer>
+  <!-- Section 4: Why Choose Us -->
+  <section>
+    <div class="flex">
+      <div class="image">
+        <img src="https://avatars.mds.yandex.net/i?id=46176de44b7d1540f2b829e2b87b189a_l-5350403-images-thumbs&ref=rim&n=13&w=640&h=640" alt="Why Choose Us">
+      </div>
+      <div class="text">
+        <h2>Why Choose Us</h2>
+        <p>We prioritize customer satisfaction, ensuring every visit to our boutique is a memorable experience filled with style and comfort.</p>
+      </div>
+    </div>
+  </section>
 
-    <script>
-        // Intersection Observer for fade-in effect
-        const sections = document.querySelectorAll('.section');
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, {
-            threshold: 0.1
-        });
+  <!-- Section 5: Our Approach -->
+  <section>
+    <div class="flex">
+      <div class="text">
+        <h2>Our Approach</h2>
+        <p>We blend tradition with innovation, offering timeless pieces alongside the latest fashion trends for a complete wardrobe.</p>
+      </div>
+      <div class="image">
+        <img src="https://avatars.mds.yandex.net/i?id=c2938004ef37789e3f0df07ae0731b5d_l-4395164-images-thumbs&ref=rim&n=13&w=1080&h=768" alt="Our Approach">
+      </div>
+    </div>
+  </section>
 
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-    </script>
+  <!-- Section 6: Call to Action -->
+  <section class="cta">
+    <a href="mailto:contact@gosporteo.shop">Contact Us Today</a>
+  </section>
 
+  <!-- Footer -->
+  <footer>
+    <p><strong>Email:</strong> contact@gosporteo.shop</p>
+    <p><strong>Phone:</strong> +1 315 936 9027</p>
+    <p><strong>Address:</strong> Delray Beach, FL</p>
+    <p>&copy; 2025 SHAG DAYTONA RESYNDICATION, LLC. All rights reserved.</p>
+  </footer>
 </body>
 </html>
